@@ -1,0 +1,9 @@
+.navbar {
+  width: 100%;
+  height: var(--navbar-height);
+  
+}
+
+.navbar__inner {
+  padding: 20px;
+}
