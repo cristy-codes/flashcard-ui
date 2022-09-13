@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 
 import Navbar from "./Navbar";
 import Dashboard from "../dashboard";
+import Folder from "../folder";
 
 const Home = () => {
   return (
@@ -12,6 +13,11 @@ const Home = () => {
       <div className="home-main">
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/folder/:folderId" element={<Folder />} />
+          <Route
+            path="/folder/:folderId/:subFolderId"
+            element={<Folder />}
+          />
         </Routes>
       </div>
     </div>

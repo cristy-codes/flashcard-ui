@@ -1,12 +1,13 @@
 .home {
-    --navbar-height: 75px;
-    height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr;
+  --navbar-height: 75px;
+  --home-pad: 50px;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
 .home-main {
-  height: calc(100vh - var(--navbar-height));
+  height: calc(100vh - var(--navbar-height) - 2 * var(--home-pad));
   overflow: auto;
+  padding: var(--home-pad);
 }
-
